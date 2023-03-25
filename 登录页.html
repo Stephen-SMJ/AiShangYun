@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>登录/注册</title>
+    <link rel="stylesheet" href="css/登录页.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="icon" href="img/favico.ico">
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/three.min.js" type="text/javascript"></script>
+    <script src="https://recaptcha.google.cn/recaptcha/api.js?render=_reCAPTCHA_site_key"></script>
+</head>
+
+<body class="wall-body">
+
+<!--注册页面-->
+<form id="validate">
+    <div class="content wow slideInDown">
+        <div class="form sign-in">
+            <form action="" method="get">
+                <h2>欢迎回来</h2>
+                <label>
+                    <span>邮箱</span>
+                    <input type="email" required="ture" name="email" email="true"/>
+                </label>
+                <label>
+                    <span>密码</span>
+                    <input type="password" required="true" name="password" rangelength="[6,12]"/>
+                </label>
+                <p class="forgot-pass"><a href="#">忘记密码？</a></p>
+                <div class="g-recaptcha"
+                     style="transform:scale(0.90); background: none"
+                     data-sitekey="6Lcet8YUAAAAALvODSUdVpfnI-7HMHkoJQ5l2XzL"></div>
+                <a href="首页.html">
+                    <button type="button" class="submit">登 录</button>
+                </a>
+                <button type="button" class="fb-btn">使用 <span>QQ/微信</span> 帐号登录</button>
+            </form>
+        </div>
+        <div class="sub-cont">
+            <div class="img">
+                <div class="img__text m--up">
+                    <h2>还未注册？</h2>
+                    <p>立即注册，发现大量机会！</p>
+                </div>
+                <div class="img__text m--in">
+                    <h2>已有帐号？</h2>
+                    <p>有帐号就登录吧，好久不见了！</p>
+                </div>
+                <div class="img__btn">
+                    <span class="m--up">注 册</span>
+                    <span class="m--in">登 录</span>
+                </div>
+            </div>
+            <div class="form sign-up">
+                <form action="" method="post">
+                    <h2>立即注册</h2>
+                    <label>
+                        <span>用户名</span>
+                        <input type="text" required="true" name="name" rangelength="[2,8]"/>
+                    </label>
+                    <label>
+                        <span>邮箱</span>
+                        <input type="email" required="true" name="email2" email="true"/>
+                    </label>
+                    <label>
+                        <span>密码</span>
+                        <input id="cpassword" type="password" required="true" name="password2" rangelength="[6,12]"/>
+                    </label>
+                    <label>
+                        <span>确认密码</span>
+                        <input type="password" required="true" name="password3" equalTo="#cpassword"/>
+                    </label>
+                    <button type="button" class="submit">注 册</button>
+                    <button type="button" class="fb-btn">使用 <span>QQ/微信</span> 帐号注册</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</form>
+
+<!--动态背景-->
+<script src="js/wallbgcanvas.js" type="text/javascript"></script>
+<div id="wall-bg">
+    <canvas width="800px" height="902px" style="width: 800px; height: 722px;"></canvas>
+</div>
+
+</body>
+</html>
+<script src="js/vendor/jquery-2.2.4.min.js"></script>
+<script src="js/jquery-3.4.1.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/messages_zh.js"></script>
+<script src="js/登录页.js"></script>
+<script>
+    $(function () {
+        $("#validate").validate();
+    })
+</script>
+<script src="js/wow.min.js"></script>
+<script type="text/javascript">
+    new WOW().init();
+</script>

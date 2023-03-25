@@ -1,0 +1,40 @@
+.about-banner{
+    height: 651px;
+    font-family: "思源黑体 CN Regular", sans-serif;
+}
+.bg{
+    background: url("../img/iot/iot2.jpg") center;
+    background-size: cover;
+}
+.about-banner img{
+    width: 100%;
+}
+.about-banner h1{
+    color: snow;
+    padding-bottom: 70px;
+    font-size: 40px;
+}
+.about-banner h3{
+    color: snow;
+}
+.about-banner .row{
+    padding-top: 70px;
+}
+.about-banner .row span{
+    color: snow;
+    font-size: 80px;
+}
+.choose h1{
+    font-weight: bold;
+    font-family: "Microsoft YaHei", sans-serif;
+}
+
+video{
+    border-radius: 15px;
+}
+.iconfont{
+    font-size: 25px;
+}
+footer{
+    margin-top: 100px;
+}
